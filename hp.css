@@ -9,12 +9,16 @@
     --text-color:linear-gradient(90deg,rgb(248,172,0),rgb(246,226,210));
     --p-font:20px;
 }
-header{
+.navbar{
     display:flex;
     align-items:center;
     justify-content:space-between;
     padding:10px 20px 10px;
     transition:all .50s ease;
+    width:100%;
+    position:fixed;
+    background-color: white;
+    z-index: 1;
 }
 .logo{
     width:32px;
@@ -51,6 +55,7 @@ h1{
     height:70vh;
     object-fit:cover;
     object-position:top;
+    z-index: 2;
 }
 
 .report-desc{
@@ -67,7 +72,7 @@ h1{
 
 }
 .report-desc h1{
-    font-size:var(--p-font);
+    font-size:16px;
     color:black;
     font-family:"Baloo Bhaijaan 2";
     text-align:left;
@@ -114,10 +119,9 @@ h1{
 .adopt-info img{
     width:200px;
     height:auto;
-    
 }
 .adopt-desc h1{
-    font-size:var(--p-font);
+    font-size:16px;
     color:black;
     font-family:"Baloo Bhaijaan 2";
     text-align:left;
@@ -171,7 +175,7 @@ h1{
 
 .volunteer-info a{
     color:inherit;
-    font-size:var(--p-font);
+    font-size:16px;
 }
 
 #a:hover{
@@ -184,14 +188,14 @@ h1{
 
 #c{
     padding-top:50px;
-    font-size:var(--p-font);
+    font-size:16px;
 }
 
 .navlist{
     font-size:15px;
-    position:absolute;
+    position:fixed;
     display:none;
-    top:50px;
+    top:60px;
     color:black;
     font-family:"Baloo Bhaijaan 2";
     background-color:white;
@@ -205,7 +209,7 @@ h1{
 
 .navlist ul li{
     padding:10px;
-    font-size:var(--p-font);
+    font-size:16px;
     margin-left:-30px;
     font-weight:bold;
 }
