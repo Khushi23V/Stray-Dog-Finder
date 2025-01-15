@@ -1,0 +1,61 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --bg-color:rgb(248,172,0);
+    --text-color:linear-gradient(90deg,rgb(248,172,0),rgb(246,226,210));
+    --p-font:20px;
+}
+
+
+h1{
+    font-family: Lilita One;
+    text-align:center;
+    font-size:var(--p-font);
+    background:var(--text-color);
+    background-clip:text;
+    color:transparent;
+    padding:20px 0px 40px;
+}
+
+.info{
+    font-family:"Baloo Bhaijaan 2";
+    text-align: justify;
+    padding:35px;
+    background-color:white;
+}
+
+h2{
+    font-size:var(--p-font);
+    margin-bottom:20px;
+    margin-top:20px;
+}
+
+p,ul,li{
+    font-size:16px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+footer{
+    background-color: var(--bg-color);
+    bottom:0;
+    width:100%;
+    display:block;
+    height:60px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.logo{
+    width:32px;
+    height:27px;
+}
+.border{
+    background-color: var(--bg-color);
+    padding:15px;
+}
