@@ -1,0 +1,93 @@
+*{
+    padding:20px 0px 20px;
+    margin:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --bg-color:rgb(248,172,0);
+    --text-color:linear-gradient(90deg,rgb(248,172,0),rgb(246,226,210));
+    --p-font:20px;
+    --i-font:16px;
+}
+.pf-name{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    gap:15px;
+}
+.profile{
+    background-color: var(--bg-color);
+    width:150px;
+    height:150px;
+    border-radius: 100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+#profile-icon{
+    font-size:100px;
+}
+
+h1{
+    font-family:Lilita One;
+    font-size:35px;
+}
+
+.info{
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    gap:20px;
+}
+p{
+    font-size:var(--p-font);
+    font-family: "Baloo Bhaijaan 2";
+}
+
+#ui-image,#s-image,#rm-image,#da-image,#d-image,#arrow-image{
+    font-size:25px;
+    color:var(--bg-color);
+    padding-left:40px;
+}
+
+.lining{
+    border-top:1.5px solid rgba(185, 185, 185, 1);
+    margin-top:-50px;
+}
+
+a{
+    text-decoration:none;
+    color: inherit;
+}
+.reports-made,.saved,.dogs-adopted,.drafts{
+    margin-top:-120px;
+}
+
+.full{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    padding-right:40px;
+}
+
+@media only screen and (max-width:720px){
+    p{
+        font-size:var(--i-font);
+    }
+    #ui-image,#s-image,#rm-image,#da-image,#d-image,#arrow-image{
+        font-size:20px;
+    }
+    h1{
+        font-size:30px;
+    }
+    #profile-icon{
+        font-size:80px;
+    }
+    .profile{
+        width:120px;
+        height:120px;
+    }
+}
