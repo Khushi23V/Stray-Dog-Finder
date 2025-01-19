@@ -1,0 +1,125 @@
+*{
+    padding:0px 5px 0px;
+    margin:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --bg-color:rgb(248,172,0);
+    --text-color:linear-gradient(90deg,rgb(248,172,0),rgb(246,226,210));
+    --p-font:20px;
+}
+
+h1{
+    font-family: Lilita One;
+    text-align:center;
+    font-size:var(--p-font);
+    background:var(--text-color);
+    background-clip:text;
+    color:transparent;
+    padding:20px 0px 40px;
+}
+
+.settings{
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+}
+
+#filter{
+    font-size:22px;
+}
+
+p,a{
+    font-family: "Baloo Bhaijaan 2";
+    font-size:18px;
+    text-decoration: none;
+    color:inherit;
+}
+
+.card{
+    background-color:white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0,50%);
+    width:45vw;
+    height:300px;
+    border-radius:20px;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    
+}
+.cards{
+    padding:50px 0px 50px;
+    gap:30px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+}
+
+img{
+    width:40vw;
+    height:180px;
+    object-fit:cover;
+}
+
+.card-info{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:40vw;
+}
+
+.features{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.viewsave{
+    display:flex;
+    gap:10px;
+}
+
+.nameloc p:first-child{
+    color:var(--bg-color);
+    font-size:23px;
+    font-weight: bold;
+}
+
+button{
+    background-color: var(--bg-color);
+    border:none;
+    border-radius:10px;
+    width:auto;
+}
+.nameloc{
+    display:block;
+}
+
+.nameloc p:last-child{
+    margin-top:-10px;
+}
+.alerting{
+    cursor:pointer;
+}
+
+@media only screen and (max-width:620px){
+    .cards{
+        grid-template-columns: repeat(1, auto);
+    }
+    .card{
+        width:65vw;
+    }
+    img,.card-info{
+        width:55vw;
+    }
+    p,a{
+        font-size:14px;
+    }
+    .nameloc p:first-child{
+        font-size:20px;
+    }
+}
