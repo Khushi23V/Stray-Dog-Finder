@@ -1,2 +1,4 @@
-const saveAlert=document.querySelector(".alerting");
-saveAlert.onclick=()=>alert("Profile Saved!");
+const saveAlert=document.querySelectorAll(".alerting");
+saveAlert.forEach(p => {
+    p.onclick = () => alert("Profile Saved!");
+});
